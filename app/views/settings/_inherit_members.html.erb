@@ -1,0 +1,14 @@
+<div>
+  <table>
+    <tbody>
+      <tr>
+        <td><%= check_box_tag "settings[inherit_members]", '1', Setting.plugin_redmine_inherit_members.try(:[], 'inherit_members') == '1', id: :inherit_members %></td>
+        <td><%= label_tag :inherit_members, 'Inherit members by default' %></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<% content_for :header_tags do %>
+  <%= javascript_include_tag 'delete_class', :plugin => 'redmine_inherit_members' %>
+<% end %>
