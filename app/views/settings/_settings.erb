@@ -1,0 +1,6 @@
+<%= check_box_tag "settings[inherit_members]", '1', Setting.plugin_redmine_project_form_extended.try(:[], 'inherit_members') == '1', id: :inherit_members %></td>
+<%= label_tag :inherit_members, 'Inherit members by default' %></td>
+
+<% content_for :header_tags do %>
+  <%= javascript_include_tag 'delete_class', :plugin => 'redmine_project_form_extended' %>
+<% end %>

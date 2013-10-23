@@ -1,3 +1,0 @@
-= redmine_inherit_members
-
-Description goes here

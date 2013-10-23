@@ -1,19 +1,19 @@
 require 'redmine'
 
-Redmine::Plugin.register :redmine_inherit_members do
-  name 'Redmine Inherit Members plugin'
+Redmine::Plugin.register :redmine_project_form_extended do
+  name 'Redmine project form extended plugin'
   author 'Jacek Grzybowski'
-  description "'inherit members' options is checked by default when creating new project"
+  description "Extends project form functionalities"
   version '0.0.1'
-  url 'http://example.com/path/to/plugin'
-  author_url 'http://example.com/about'
+  url 'http://github.com/efigence/redmine_project_form_extended'
+  author_url 'http://efigence.com'
 
-  settings :default => { inherit: 'enabled' }, :partial => 'settings/inherit_members'
+  settings :default => {}, :partial => 'settings/settings'
 end
 
 ActionDispatch::Callbacks.to_prepare do
   require_dependency 'project'
-  Project.send(:include, RedmineInheritMembers::Patches::ProjectPatch)
+  Project.send(:include, RedmineProjectFormExtended::Patches::ProjectPatch)
 end
 
-require 'redmine_inherit_members/hooks/view_projects_form_hook'
+require 'redmine_project_form_extended/hooks/view_projects_form_hook'
