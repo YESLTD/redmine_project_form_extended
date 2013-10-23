@@ -1,3 +1,5 @@
-<% content_for :header_tags do %>
-  <%= javascript_include_tag 'confirm_public', :plugin => 'redmine_project_form_extended' %>
+<% if Setting.plugin_redmine_project_form_extended.try(:[], 'public_cofirmation') == '1' %>
+  <% content_for :header_tags do %>
+    <%= javascript_include_tag 'confirm_public', :plugin => 'redmine_project_form_extended' %>
+  <% end %>
 <% end %>
