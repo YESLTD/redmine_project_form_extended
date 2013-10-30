@@ -1,4 +1,5 @@
 <% if Setting.plugin_redmine_project_form_extended.try(:[], 'public_cofirmation') == '1' %>
+  <p id='hidden_confirm_msg' style="display: none;"><%= t('confirm_message') %></p>
   <% content_for :header_tags do %>
     <%= javascript_include_tag 'confirm_public', :plugin => 'redmine_project_form_extended' %>
   <% end %>

@@ -8,7 +8,7 @@ Redmine::Plugin.register :redmine_project_form_extended do
   url 'http://github.com/efigence/redmine_project_form_extended'
   author_url 'http://efigence.com'
 
-  settings :default => {}, :partial => 'settings/settings'
+  settings :default => {}, :partial => 'settings/project_form_extended_settings'
 end
 
 ActionDispatch::Callbacks.to_prepare do
