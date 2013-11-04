@@ -1,0 +1,4 @@
+pl:
+  inherit_members: 'Dziedzicz członków po projekcie nadrzędnym'
+  confirm_public: 'Wyświetlaj okno potwierdzające przy tworzeniu nowego projektu jako publiczny'
+  confirm_message: 'Czy jesteś pewny, że chcesz utworzyć ten projekt jako publiczny?'
