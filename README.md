@@ -20,4 +20,4 @@ There you can decide, whether:
 
 * projects should inherit members from parent project by default
 * confirmation dialog should show up when submitting form for new project with `Public` option checked
-* or creating public projects show be disabled
+* or creating public projects should be disabled
