@@ -1,4 +1,6 @@
 pl:
   inherit_members: 'Dziedzicz członków po projekcie nadrzędnym'
   confirm_public: 'Wyświetlaj okno potwierdzające przy tworzeniu nowego projektu jako publiczny'
+  default_public: 'Defaultowa opcja Redmine (możliwe tworzenie publicznych projektów)'
+  disable_public: 'Wyłącz możliwość tworzenia publicznych projektów'
   confirm_message: 'Czy jesteś pewny, że chcesz utworzyć ten projekt jako publiczny?'

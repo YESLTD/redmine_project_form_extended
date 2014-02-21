@@ -1,4 +1,6 @@
 en:
   inherit_members: 'Inherit members from parent project'
   confirm_public: 'Display confirmation dialog when attempting to make new project public'
+  default_public: 'Redmine default (public option enabled)'
+  disable_public: 'Disable creating public projects'
   confirm_message: 'Are you sure you want to create this project as public?'

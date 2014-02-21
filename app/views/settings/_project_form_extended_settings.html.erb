@@ -1,8 +1,16 @@
+<h4>Member inheritance configuration:</h4>
 <%= check_box_tag "settings[inherit_members]", '1', Setting.plugin_redmine_project_form_extended.try(:[], 'inherit_members') == '1', id: :inherit_members %></td>
 <%= label_tag :inherit_members, t('inherit_members') %></td>
+<br /><br />
+<h4>Public project configuration:</h4>
+<%= radio_button_tag 'settings[public_cofirmation]', 'default', Setting.plugin_redmine_project_form_extended.try(:[], 'public_cofirmation') == 'default' %>
+<%= t :default_public %>
 <br />
-<%= check_box_tag "settings[public_cofirmation]", '1', Setting.plugin_redmine_project_form_extended.try(:[], 'public_cofirmation') == '1', id: :public_cofirmation %></td>
-<%= label_tag :public_cofirmation, t('confirm_public') %></td>
+<%= radio_button_tag 'settings[public_cofirmation]', 'confirm', Setting.plugin_redmine_project_form_extended.try(:[], 'public_cofirmation') == 'confirm' %>
+<%= t :confirm_public %>
+<br />
+<%= radio_button_tag 'settings[public_cofirmation]', 'disable', Setting.plugin_redmine_project_form_extended.try(:[], 'public_cofirmation') == 'disable' %>
+<%= t :disable_public %>
 
 <% content_for :header_tags do %>
   <%= javascript_include_tag 'settings_page', :plugin => 'redmine_project_form_extended' %>
