@@ -1,3 +1,3 @@
 $(function(){
-  $('#project_inherit_members').prop('disabled', true);
+  $('#project_is_public').prop('checked', false).prop('disabled', true);
 })
