@@ -1,3 +1,3 @@
 $(function(){
-  $('#project_is_public').prop('checked', false).prop('disabled', true);
+  $('#project_is_public').prop('disabled', true);
 })
