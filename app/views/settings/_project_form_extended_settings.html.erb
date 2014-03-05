@@ -11,6 +11,8 @@
 <br />
 <%= radio_button_tag 'settings[public_cofirmation]', 'disable', Setting.plugin_redmine_project_form_extended.try(:[], 'public_cofirmation') == 'disable' %>
 <%= t :disable_public %>
+<br /><br />
+<%= link_to t(:unpublish_all), unpublish_all_projects_path, class: 'btn', method: :post, :data => { confirm: t(:confirm_unpublish) } %>
 
 <% content_for :header_tags do %>
   <%= javascript_include_tag 'settings_page', :plugin => 'redmine_project_form_extended' %>

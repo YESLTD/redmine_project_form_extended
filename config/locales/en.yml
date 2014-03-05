@@ -4,3 +4,6 @@ en:
   default_public: 'Redmine default (public option enabled)'
   disable_public: 'Disable creating public projects'
   confirm_message: 'Are you sure to save this project as public?'
+  unpublish_all: 'Turn all projects to non-public'
+  confirm_unpublish: 'Are you sure to turn all projects to non-public?'
+  unpublish_success: 'All projects are now non-public.'

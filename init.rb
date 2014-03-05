@@ -16,6 +16,7 @@ end
 ActionDispatch::Callbacks.to_prepare do
   require_dependency 'project'
   Project.send(:include, RedmineProjectFormExtended::Patches::ProjectPatch)
+  ProjectsController.send(:include, RedmineProjectFormExtended::Patches::ProjectsControllerPatch)
 end
 
 require 'redmine_project_form_extended/hooks/view_projects_form_hook'
