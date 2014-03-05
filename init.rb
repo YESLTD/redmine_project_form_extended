@@ -4,7 +4,7 @@ Redmine::Plugin.register :redmine_project_form_extended do
   name 'Redmine project form extended plugin'
   author 'Jacek Grzybowski'
   description "Allows to inherit members from parent project by default and display confirmation dialog when attempting to make new project public"
-  version '0.1'
+  version '0.2'
   url 'http://github.com/efigence/redmine_project_form_extended'
   author_url 'http://efigence.com'
 
