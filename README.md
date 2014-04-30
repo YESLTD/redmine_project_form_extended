@@ -24,7 +24,7 @@ There you can decide, whether:
 
 # License
 
-    Redmine Accounting plugin
+    Redmine project form extended
     Copyright (C) 2014  efigence S.A.
 
     This program is free software: you can redistribute it and/or modify
